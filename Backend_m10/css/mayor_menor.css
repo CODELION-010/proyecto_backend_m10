@@ -1,0 +1,82 @@
+body{
+    background-color:#1f0834;
+    zoom: 100%;
+}
+/*estilos parrafo superior*/
+p {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #ebdfdf;
+  }
+ /*estulos caja contenedora*/ 
+  #caja {
+    width: 500px;
+    height: 180px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #ebdfdf;
+    border-radius: 10px;
+  }
+/*estulos entrada de numeros*/
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  /*estulos entrada de numeros*/
+  #input{
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    width: 460px;
+    height: 50px;
+    font-size: 20px;
+  }
+  /*estulos botones*/
+ #btn_menu{
+    width: 150px;
+    height: 50px;
+    margin-left: 0%;
+    background-color: #1f0834;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+ }
+ #botones {
+  display: flex;
+}
+  #botones button {
+    width: 150px;
+    height: 50px;
+    background-color: #1f0834;
+    color: #ffffff;
+    margin-right: 60px;
+    margin-left: 9%;
+    margin-top: 8px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+  }
+  #botones button:hover{
+    background-color: #ffffff;
+    color:#1f0834; ;
+    font-weight: bold;
+  }
+  
+  #btn_menu:hover{
+    background-color: #ffffff;
+    color: #1f0834;
+    font-weight: bold;
+    font-size: 20px;
+  }
+/*estilos de resultado generado por PHP*/
+  #resultado{
+    text-align: center;
+    color:#ffffff;
+    margin: 20px auto;
+  }

@@ -1,0 +1,231 @@
+
+body {
+  background-image: url('../img/fondo.png');
+  mask-repeat: no-repeat;
+  background-size: cover;
+  font-family: monospace; 
+  text-rendering: auto;
+}
+  /*estilos contenedor texto autonomo*/
+.container {
+  width: 100%;
+  height: 140px;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  background-color: rgb(31, 8, 52);
+}
+  /*estilos texto autonomo*/
+#texto-salida {
+  margin: 0%;
+  padding: 0%;
+  color: #FFFFFF;
+  font-size: 35px;
+  font-family: monospace;
+}
+  /*estilos titulo pagina*/
+h1 {
+  text-align: center;
+  margin: 0%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 90px;
+  text-shadow: 8px 8px 8px #1f0834;
+  
+}
+#contenedor {
+  display: flex;
+  margin-top: 2%;
+}
+/*comtemdedor seccion seleccionar*/
+#contenedor2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+ margin: 0%;
+}
+
+  /*estilos seccion tecnologias y buenas practicas*/
+.seccion1,
+.seccion2 {
+  margin: 2px;
+  flex: 1;
+  background-color: #1f0834;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  width: 40rem;
+  height: 28rem;
+}
+  /*estilos seccion menu seleccionar*/
+.seccion3 {
+  background-color: #1f0834;
+  background-image: url(../img/personaje.png);
+  background-size: 28rem;
+  background-repeat: no-repeat;
+  background-position: right;
+  color: #ffffff;
+  margin-top: 2%;
+  padding: 0px;
+  border: 1px solid #ffffff;
+  width: 50rem;
+  height: 48rem;
+}
+  /*estilos texto seccopm 1, 2, y 3*/
+.seccion1 h3 {
+  text-align: center;
+  margin-left: 2%;
+  line-height: 1.0;
+  font-size: 30px;
+}
+
+.seccion2 h3 {
+  text-align: center;
+  margin-left: 2%;
+  line-height: 1.0;
+  font-size: 30px;
+}
+.seccion1 p {
+  text-align: center;
+  margin-left: 2%;
+  line-height: 1.5;
+  font-size: 20px;
+}
+.seccion2 p {
+  text-align: center;
+  margin-left: 2%;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.seccion3 h3 {
+  text-align: center;
+  line-height: 1.0;
+  font-size: 40px;
+  margin: 0%;
+  padding: 1%;
+}
+  /*estilos imagen seccion tecnologias*/
+#imagen1 {
+  background-image: url(../img/lenguajes.png);
+  mask-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  width: 90%;
+  height: 180px;
+  margin: 0 auto;
+}
+  /*estilos  imagen seccion buenas practicas*/
+#imagen2 {
+  background-image: url(../img/buenas_practicas.png);
+  mask-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  width: 90%;
+  height: 180px;
+  margin: 0 auto;
+}
+
+/*estilos  botones*/
+.boton {
+  font-size: 30px;
+  display: grid;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: #1f0834;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: left;
+  line-height: 80px; 
+  border: 2px solid #ffffff;
+  position: relative;
+  width: 260px;
+  height: 90px;
+  transition: all 0.5s ease;
+}
+
+/*estilos iconos botones menu*/
+.boton::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px; /*tamaño iconos*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* Estilo del contorno blanco al pasar el mouse */
+.boton:hover {
+  background-color: #ffffff;
+  color: #1f0834;
+  width: 400px;
+  height: 80px;
+  font-size: 40px;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+/*insercion de iconos para botones*/
+[data-icon="../img/calculadora.png"]::after {
+  background-image: url("../img/calculadora.png");
+}
+
+[data-icon="../img/Mayor_Menor.png"]::after {
+  background-image: url("../img/Mayor_Menor.png");
+}
+
+[data-icon="../img/formulario.png"]::after {
+  background-image: url("../img/formulario.png");
+}
+
+[data-icon="../img/calendario.png"]::after {
+  background-image: url("../img/calendario.png");
+}
+[data-icon="../img/porcentaje.png"]::after {
+  background-image: url("../img/porcentaje.png");
+}
+[data-icon="../img/documentacion.png"]::after {
+  background-image: url("../img/documentacion.png");
+}
+
+/*estilos de fotter y botones del mismo*/
+footer {
+  border: 2px solid #ffffff;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f0834;;
+  text-align: center;
+}
+footer button{
+  width: 10rem;
+  height: 4rem;
+  background-color: #1f0834;
+  color: #ffffff;
+  margin: 1%;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 25px;
+  transition: all 0.2s ease;
+  border: 2px solid #ffffff;
+}
+footer button:hover{
+  background-color: #f3eded;
+  color: #1f0834;
+  width: 12rem;
+  height: 5rem;
+  font-size: 30px;
+  font-weight: bold;
+  transition: all 0.5s ease;
+  border: 2px solid #ffffff;
+}
+h2{
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 30px;
+  margin-bottom: 0%;
+}
