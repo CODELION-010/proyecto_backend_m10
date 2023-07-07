@@ -7,10 +7,16 @@ $compra = 0;
 $descuento = 0;
 
 
-if (!empty($_POST['compra']) && !empty($_POST['descuento'])) {
+
+if (isset($_POST['Calcular'])) {
     $compra    = ($_POST['compra']);
     $descuento = ($_POST['descuento']);
     
+      #conversion de caracteres a numeros enteros
+    if (!is_numeric($compra) || !is_numeric($descuento)) {
+      echo "<h2>Los valores ingresados no son válidos.</h2>";
+      exit;
+  }
 
     //Se Multiplica el Total por el Descuento Y se Divide por Cien.
     
@@ -26,8 +32,7 @@ if (!empty($_POST['compra']) && !empty($_POST['descuento'])) {
     "<br>"." El Total a Descontar es de: $ " . $total_formateado . "<br>" .
     "El Valor a Pagar es de: $ " . $total2_formateado . "</h2>";
 
-} else {
-     echo "<h2>Ingrese los Valores Requeridos Para Empezar.</h2>";
-  }
-
+}else {
+  echo "<h2> Ingrese Valores Para Empezar </h2>";
+}
 ?>

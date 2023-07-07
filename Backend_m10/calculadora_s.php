@@ -5,8 +5,8 @@ include 'calculadora_s.html';
 $valor1 = 0;
 $valor2 = 0;
 $resultado = 0;
-#verificacion de informacion de inputs
-if (isset($_POST['valor1']) && isset($_POST['valor2']) && isset($_POST['selector'])) {
+#verificacion de selector y calcular
+if (isset($_POST['calcular']) && isset ($_POST['selector'])) {
     $valor1 = $_POST['valor1'];
     $valor2 = $_POST['valor2'];
     $selector = $_POST['selector'];

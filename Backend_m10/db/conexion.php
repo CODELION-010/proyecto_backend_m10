@@ -1,11 +1,11 @@
 <?php
 
-    host = 'localhost';
+    $host = 'localhost';#se agrega el signo "$"
     $usuario = 'root';
-    $contraseña = 'xxx';
+    $contraseña = '123465*'; #se asigna contraseña
     $basedatos = 'mi_proyecto';
-
-    $conexion = new mysqli($host,$usuario,,$basedatos);
+                                  #se agrega "$contraseña"      
+    $conexion = new mysqli($host,$usuario,$contraseña,$basedatos);
 
     if ($conexion->connect_errno) {
         echo "fallos en conexión";

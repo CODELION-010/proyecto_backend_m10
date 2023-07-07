@@ -11,7 +11,7 @@ include "metodo_get.html";
         echo "<h2>Su Documento de Identidad es : ".$cedula."<br></h2>";
 
     }else {
-        echo "<h2>Registra Para Empezar.</h2>";
+        echo "<h2>Registra tus Datos Para Empezar.</h2>";
     }
 
     ?>
